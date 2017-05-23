@@ -1,0 +1,26 @@
+<head>
+<title>Karte</title>
+</head>
+<body>
+<form>
+<p>Noerdliche Breite:</p>
+	<label for="GPS">Grad: </label>
+	<input type="text" id="NG" name="Grad">
+	<label for="GPS">Minuten: </label>
+	<input type="text" id="NM" name="Minuten">
+	<label for="GPS">Sekunden: </label>
+	<input type="text" id="NSek" name="Sekunden">
+	<script>
+var z = NG+NM/60+NSek/3600;
+</script>
+document.getElementById("demo").innerHTML = z;
+	<p>Suedliche Breite:</p>
+	<label for="GPS">Grad: </label>
+	<input type="text" id="SG" name="Grad">
+	<label for="GPS">Minuten: </label>
+	<input type="text" id="GM" name="Minuten">
+	<label for="GPS">Sekunden: </label>
+	<input type="text" id="GSek" name="Sekunden">
+	<p>
+</form>
+</body>
